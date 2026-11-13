@@ -1,0 +1,28 @@
+[project]
+name = "day261112-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ljs0130", email = "dkeee03@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = ["langchain-ollama",
+  "torch>=2.6,<3",
+  "transformers>=4.57,<5",
+  "peft>=0.17,<0.19",
+  "accelerate>=1.10,<2"
+  ]
+
+[project.scripts]
+day261112-1 = "day261112_1:main"
+ex01 = "ex01:main"
+ex02 = "ex02:main"
+ex03 = "ex03:main"
+ex04 = "ex04:main"
+ex05 = "ex05:main"
+ex06 = "ex06:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
